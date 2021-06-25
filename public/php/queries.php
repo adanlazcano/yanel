@@ -25,7 +25,6 @@ class Queries{
         
          $idUser = $this->connection->insert_id;
            
-
          foreach($request->product as $value){
             $idProduct = $value->idProduct;
             $unit = $value->unit;
