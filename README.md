@@ -1,10 +1,10 @@
 ## Carrito de compras creado para YANEL bolsas y accesorios. Guadalajara, Jalisco MX.
 
-[Visit la página](https://yanel.netlify.app){target="_blank"}
+[Visit la página](https://yanel.netlify.app?target=_blank)
 
 
 
 ## Shopping Cart created to YANEL bolsas y accesorios. Guadalajara, Jalisco MX.
 
-[Visit the page](https://yanel.netlify.app){target="_blank"}
+[Visit the page](https://yanel.netlify.app?target=_blank)
 
