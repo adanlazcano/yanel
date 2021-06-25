@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yanel Bolsos y accesorios</title>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet">
+    <link rel="stylesheet" href="./public/css/main.css">
+    <script type="text/javascript" src="https://openpay.s3.amazonaws.com/openpay.v1.min.js" defer></script>
+    <script type='text/javascript' src="https://openpay.s3.amazonaws.com/openpay-data.v1.min.js" defer></script>
+
+    <script src="./public/js/main.js" defer></script>
+
+</head>
+
+<body>
+
+    <!--HEADER-->
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo"><img width="110" src="./public/img/logo.png" alt="logo"></a>
+            </div>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Inicio</a></li>
+                    <li class="nav__item"><a href="#featured" class="nav__link">Destacados</a></li>
+                    <li class="nav__item"><a href="#new" class="nav__link">Nuevos</a></li>
+                    <li class="nav__item"><a href="#suscribed" class="nav__link">Suscribete</a></li>
+                </ul>
+            </div>
+            <!-- CART CONTAINER-->
+            <div class="nav__menu-cart" id="nav-menu-cart">
+
+                <div id="nav-menu-cart-content" class="nav-menu-cart-content">
+
+                </div>
+
+                <div id="footer-menu-cart-content" class="footer-menu-cart-content"></div>
+
+            </div>
+            <!-- END CART CONTAINER-->
+            <div>
+                <i class="bx bx-cart nav__cart" alt="Carrito de compras" id="nav-cart"></i>
+                <i class="bx bx-menu nav__toggle" id="nav-toggle"></i>
+            </div>
+        </nav>
+    </header>
+    <!--END HEADER-->
+    <!-- MAIN (NUEVOS PRODUCTOS, PRODUCTOS DESCATADOS, FOOTER)-->
+    <main class="l-main">
+        <section class="home" id="home">
+            <div class="home__container bd-grid">
+                <div class="home__data">
+                    <h1 class="home__title">
+                        NUEVOS <br> <span>PRODUCTOS</span></h1>
+                    <a id="btn-home" href="#featured" class="button">COMPRAR</a>
+                </div>
+                <img src="./public/img/home.png" alt="inicio" class="home__img">
+            </div>
+        </section>
+        <section class="collection section">
+            <div class="collection__container bd-grid">
+                <div class="collection__box">
+                    <img src="./public/img/yanel2.png" alt="" class="collection__img">
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">Clu<br>tch</span> </h2>
+                        <a href="#" class="collection__view"></a>
+                    </div>
+                </div>
+
+                <div class="collection__box">
+
+                    <div class="collection__data">
+                        <h2 class="collection__title"><span class="collection__subtitle">Bolsos<span></h2>
+                        <a href="#" class="collection__view"></a>
+                    </div>
+                    <img src="./public/img/yanel1.png" alt="" class="collection__img">
+                </div>
+            </div>
+        </section>
+        <section class="featured section" id="featured">
+            <h2 class="section-title">PRODUCTOS DESTACADOS</h2><br>
+             <div class="featured__container bd-grid" id="items-featured">
+            </div>
+        </section>
+
+        <section class="offer section">
+            <div class="offer__bg">
+                <div class="offer__data">
+                    <h2 class="offer__title">Ofertas Especiales</h2>
+                    <p class="offer__description">Ofertas descuentos especiales solo esta semana</p>
+                    <a href="#featured" class="button">Compra ahora</a>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="new section" id="new">
+            <h2 class="section-title">NUEVOS LANZAMIENTOS</h2>
+            <br>
+            <div  id="items-new" class="new__container bd-grid">
+
+              
+            </div>
+        </section>
+        <section class="newsletter section" id="suscribed">
+            <div class="newsletter__container bd-grid">
+                <div class="newsletter__suscribe">
+                    <h2 class="section-title">BOLETIN INFORMATIVO</h2>
+                    <p class="newsletter__description">
+                        Promociones y ofertas en nuestros productos.
+                    </p>
+                    <form action="" class="newsletter__form">
+                        <input type="text" placeholder="Escribe tu email" class="newsletter__input">
+                        <a href="#" class="button btn-suscribed">Suscribete</a>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__box">
+                    <h3 class="footer__title">YANEL</h3>
+                    <p class="footer__deal">Bolsos y Accesorios</p>
+                    <a href="#"><img src="./favicon.png" alt="" class="footer__store"></a>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__title">EXPLORA</h3>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Inicio</a></li>
+                        <li><a href="#featured" class="footer__link">Destacados</a></li>
+                        <li><a href="#new" class="footer__link">Nuevos</a></li>
+                        <li><a href="#suscribed" class="footer__link">Suscribete</a></li>
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__title">SERVICIOS</h3>
+                    <ul>
+                        <li><a href="#" class="footer__link">Precios</a></li>
+                        <li><a href="#" class="footer__link">Envio Gratis</a></li>
+                        <li><a href="#" class="footer__link">Tarjetas de regalo</a></li>
+
+                    </ul>
+                </div>
+                <div class="footer__box">
+                    <h3 class="footer__title">SIGUENOS</h3>
+                    <a target="_blank" href="https://es-la.facebook.com/Yanel.Mx" class="footer__social"><i class='bx bxl-facebook-square'></i></a>
+                    <a target="_blank" href="https://www.instagram.com/yanel.mx/?hl=es" class="footer__social"><i class='bx bxl-instagram-alt'></i></a>
+                 
+                </div>
+            </div>
+            <p class="footer__copy">&#169; adán_lazc@no 2019 copyright all right reserved. </p>
+
+        </footer>
+    </main>
+     <!-- END MAIN-->
+
+    <!-- DYNAMIC CONTAINER-->
+    <div id="gallery" class="gallery"></div>
+
+  <!--TEMPLATES -->
+    <template id="template-items-featured">
+        <div class="featured__product">
+            <div class="featured__box">
+                <div class="featured__new">Nueva</div>
+                <img src="./public/img/9.png" class="featured__img img-object img-gallery" alt="destacado">
+            </div>
+            <div class="featured__data">
+                <h3 class="featured__name name-object">bolsa</h3>
+                <p class="description-featured">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi!</p>
+                <p class="dimension-featured dimension-object">45x13x22</p>
+                    <span class="featured__price price-object">$3000</span><br>
+                            <button class="button-buy button-btn">Comprar</button>
+                    </div>
+                </div>
+                </template>
+
+                <template id="template-items-new">
+                    <div class="new__box">
+                        <img src="./public/img/4.png" class="new__img img-object" alt="nuevo">
+                        <div class="new__link">
+                            <h3 style="font-weight: 800;color:var(--dark-color);" class="featured__name name-object">bolsa</h3>
+                            <p class="description-featured">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, excepturi!</p>
+                            <p style="font-weight: 800;" class="dimension-featured dimension-object">45x13x22</p>
+                                <span style="color:var(--dark-color);" class="featured__price price-object">$3000</span><br>
+                             </div>
+                        <div class="btn-new-buy">
+                            <i class='bx bx-photo-album img-gallery'></i>
+                            <i class="bx bx-cart button-btn"></i>
+                        </div>
+                    </div>
+                </template>
+
+                <template id="template-cart">
+                    <div class="btn-action-content">
+                    <button class="btn-add">+</button>
+                    <button class="btn-sub">-</button>
+                  </div>
+                    <div class="content-cart">
+
+                    <div><img src="" class="img-cart" alt=""></div>
+                    <ul>
+                        <li><p class="unit-cart"></p></li>
+                     <li><p class="name-cart"></p></li>
+                       <li> <p class="dimension-cart"></p></li>
+                        <li><p class="price-cart"></p></li>
+                    </ul>
+                    
+                    </div>
+
+                </template>
+
+                <template id="template-gallery">
+                    <img class="close" src="./public/img/close.png" alt="close">
+                    
+                    <div class="gallery-content">
+                        <div class="img-content">
+                        
+                        </div>
+                        <div class="info-gallery">
+                            <p class="dimension-object"></p>
+                        <p class="name-gallery name-object"></p>
+                        <p class="desc-gallery">Description</p><br>
+                        <p class="large-gallery">Largo</p>
+                        <p class="height-gallery">Alto</p>
+                        <p class="width-gallery">Ancho</p><br>
+                        <p class="price-gallery price-object">$precio</p><br>
+                        <button class="button-buy button-btn button-gallery">Comprar</button>
+
+                    </div>
+
+                    </div>
+                </template>
+
+                <template id="template-confirm-buy">
+
+                     <img class="close" src="./public/img/close.png" alt="close">
+
+                    <div class="confirm-buy-content">
+                           
+                         <ul class="list-resume-buy">
+                        
+                          <li> 1 bolsa negra <span>$3000</span> </li>
+                        
+                       
+                        </ul>
+                        <div class="total-resume">$4000</div>
+                           
+                         
+                       <div class="logos">
+                           <div class="credit">
+                        <h4>&nbsp;Tarjetas de crédito</h4>
+                        <img src="./public/img/cards1.png" alt="">
+                    </div>
+                    <div class="debit">
+                        <h4>&nbsp;Tarjetas de débito</h4>
+                        <img  src="./public/img/cards2.png" alt="">
+
+                    </div>
+                        
+                       </div>
+
+                        <div class="resume-info">
+                            <form action="#" method="POST" id="payment-form">
+                                <input type="hidden" form="payment-form" name="token_id" id="token_id">
+                            <div class="one-input">
+
+                                <input form="payment-form" data-openpay-card="holder_name" id="holder_name" maxlength="50" type="text" value="Juan Perez Ramirez" placeholder="Titular de la tarjeta">
+                            
+                                </div>
+
+                                <div class="three-input">
+                                    <input placeholder="Telefono" id="phone" value="3322383837" type="text">
+                                    <input id="email" placeholder="email" value="aasanchezlazcano@gmail.com" type="email">
+                                </div>
+
+                                <div class="one-input">
+                                    <input id="card_number" value="4111111111111111"  form="payment-form" data-openpay-card="card_number" maxlength="50" type="text" placeholder="Número de tarjeta">
+
+                                </div>
+
+                                <div class="three-input">
+                                    <input id="expiration_year" value="21"  form="payment-form" data-openpay-card="expiration_year" maxlength="2" type="text" placeholder="Año">
+                                    <input id="expiration_month" value="04"  form="payment-form" data-openpay-card="expiration_month" maxlength="2" type="text" placeholder="Mes">
+                                    <input id="cvc" value="110" form="payment-form" data-openpay-card="cvv2" maxlength="3" type="text" placeholder="CVC">
+                                    <img src="./public/img/cvv.png" alt="">
+                                </div>
+                                 
+                      </form>
+                      
+                    </div>
+
+                    
+                    <div class="resume-terms">
+
+                        <div class="term-openpay">
+                      <p>Transacciones realizadas vía:</p>
+                      <img src="./public/img/open-pay.png" alt="">
+                      
+                    </div>
+                     
+                        <div class="term-security">
+                            <img src="./public/img/security.png" alt="">
+                       <span>Tus pagos se realizan de forma segura con encriptaci&oacute;n de 256 bits</span>
+                       
+                    </div>
+
+                    </div>
+
+                       <div class="confirm-buy-btn"> 
+            
+                      <input form="payment-form" id="pay-button" class="button"  type="button" value="Comprar">
+
+                   </div>
+                   
+                    </div>
+
+                    <div class="loader">
+                        <div class="draw"></div>
+                    </div>
+               
+                </template>
+
+
+                <!--END OF TEMPLATES -->
+
+
+</body>
+
+</html>
