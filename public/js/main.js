@@ -145,8 +145,8 @@ const chargeSuccess = () => {
         contentCharge.classList.add('content-charge');
 
         contentCharge.innerHTML = `<i class='bx bxs-comment-check'></i> 
-    <span>¡¡Cargo Exitoso!!</span> 
-    <p>¡Gracias por comprar en Yanel!</p>`;
+                                    <span>¡¡Cargo Exitoso!!</span> 
+                                 <p>¡Gracias por comprar en Yanel!</p>`;
 
         gallery.appendChild(contentCharge);
 
@@ -202,7 +202,7 @@ const drawConfirmBuy = () => {
     }));
 
     const formPay = gallery.querySelector('#payment-form');
-    //     //Se genera el id de dispositivo
+   
     let deviceSessionId = OpenPay.deviceData.setup(formPay, "deviceIdHiddenFieldName");
 
     gallery.querySelector('#pay-button').addEventListener('click', function(e) {
