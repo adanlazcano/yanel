@@ -286,31 +286,36 @@ const drawCart = () => {
         navCart.classList.add('counter');
         navCart.innerHTML = `<style>
         .nav__cart.counter::after {
-            content: '${Object.values(cart).reduce((acc, { unit }) => acc + unit, 0)}';
-            position: relative;
-            top: -16px;
-            left: 0;
-            font-size: 0.5rem;
+            content: '${count}';
+            position: absolute;
+            
+            justify-content:center;
+            display:flex;
+            align-items:center;
+            right: 4px;
+            font-size: 0.6rem;
+            font-weight:500;
+            padding:8px;
             font-family: var(--body-font);
             background-color: var(--first-color);
             border-radius: 50%;
-            padding: 2px 5px;
-            animation: opacity 1s ease-in-out infinite;
+            width:20px;
+            height:20px;
+            animation: bounce 1s ease-in-out infinite; 
             
         }
         
-        @keyframes opacity {
-           0%
-             {
-                opacity: 0;
-               
-            }
-
-            100%{
-                opacity:1;
-            }
+        @keyframes bounce {
+            0% { top: -10px;}
+            50% {top: -5px; }
+            55% {top: -2px; }
+            65% {top: 0px;}
+            95% {top: -5px;}		
+            100% {top: -10px;}
         }
+        
         </style>`;
+
 
         Object.values(cart).forEach(item => {
             templateCart.querySelector('.unit-cart').textContent = item.unit + ' unidad(es)';
