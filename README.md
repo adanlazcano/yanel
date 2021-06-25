@@ -1,6 +1,6 @@
 ## Carrito de compras creado para YANEL bolsas y accesorios. Guadalajara, Jalisco MX.
 
-[test](http://test.com){:target="_blank"}
+<a href="http://stackoverflow.com" target="_blank">Go</a>
 
 
 
